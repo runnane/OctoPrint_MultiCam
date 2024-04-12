@@ -36,16 +36,16 @@ plugin_license = "AGPLv3"
 plugin_requires = []
 
 # Block installation on OctoPrint older than 1.9.0
-try:
-    from octoprint.util.version import is_octoprint_compatible
-    
-    if not is_octoprint_compatible(">=1.9.0"):
-        print("This plugin only works with OctoPrint 1.9.0 or newer - upgrade before installing it!")
-        import sys
-        sys.exit(-1)
-except ImportError:
-    # OctoPrint is not installed, so installation will fail anyway
-    pass
+#try:
+#    from octoprint.util.version import is_octoprint_compatible
+#    
+#    if not is_octoprint_compatible(">=1.9.0"):
+#        print("This plugin only works with OctoPrint 1.9.0 or newer - upgrade before installing it!")
+#        import sys
+#        sys.exit(-1)
+#except ImportError:
+#    # OctoPrint is not installed, so installation will fail anyway
+#    pass
 
 ### --------------------------------------------------------------------------------------------------------------------
 ### More advanced options that you usually shouldn't have to touch follow after this point
